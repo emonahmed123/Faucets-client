@@ -1,0 +1,136 @@
+.header{
+    border-bottom: 1px solid #eee;
+    font-family: Varela Round,sans-serif;
+    padding: 15px;
+}
+
+.container{
+    margin: auto;
+    max-width: 1340px;
+    padding: 0  30px;
+    
+}
+
+.header .header-container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+
+     .logo h2 {
+        color: #9b1fe9;
+        font-family: Varela Round,sans-serif;
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+.right_content {
+    align-items: center;
+    display: flex;
+}
+
+.network{
+    display: flex;
+    align-items: center;
+}
+
+.connectButton {
+    display: flex;
+    align-items: center;
+    background: transparent;
+    border: 2px solid #9b1fe9;
+    border-radius: 3px;
+    color: #9b1fe9;
+    font-size: 14px;
+    font-weight: 600;
+  
+    padding: 9px 20px; 
+    text-transform: capitalize;
+    margin-right: 14px;
+
+}
+    
+
+.profile-button {
+     
+        background-color: #eee;
+        border: 1px solid #eee;
+        border-radius: 50%;
+        box-shadow: 0 4px 10px -9px #6d7380;
+        color: #000;
+        height: 30px;
+        justify-content: center;
+        padding: 5px;
+        width: 30px;
+        cursor: pointer;
+      }
+
+
+      .network_State {
+        border: 1px solid #ddd;
+        border-radius: 3px;
+        color: #6d7380;
+        cursor: pointer;
+        display: flex;
+        font-size: 14px;
+        padding: 10px 12px;
+        margin-right: 24px;
+    }
+    .network_State p {
+            font-size: 14px;
+    }
+    .Pro{
+        color:rgb(109, 115, 128);
+    
+    }
+    .Biche{
+        margin-left: 10px;
+        
+    }
+
+
+    @media screen and (max-width: 768px) {
+       .small{
+        display: none;
+       }
+       .network_State {
+        border: 1px solid #ddd;
+        color: #6d7380;
+        cursor: pointer;
+        display: flex;
+        font-size: 3px;
+        margin-left: 10px;
+        width: 20px;
+        height: 10px;
+        margin-right: 24px;
+    }
+
+    .Biche{
+        margin-left: 5px;
+        
+    }
+
+    .connectButton {
+        display: flex;
+        align-items: center;
+        background: transparent;
+        border: none;
+     
+        color: #9b1fe9;
+
+    }
+
+    .LOWall{
+       font-weight: 800;
+    }
+   
+    .header{
+        background-color: #d69ff8;
+       }
+    }
+
+
+    
+      
