@@ -1,15 +1,16 @@
 import React from 'react'
 import { Button } from 'react-bootstrap'
 import './ProfileDrop.css'
+import { Link } from "react-router-dom";
 const ProfileDrop = (props) => {
   const {setOpenMenu, openMenu}=props
-  
+   
     return (
     <div>
-    <ul onClick={() => setOpenMenu(!openMenu)} className="d-flex flex-column gap-2  DropProfile">
-      <a src="/login">Log In</a>
-      <a src="/signup">Sign Up</a>
-      <a src="/faq"> FAQ</a>
+    <ul onClick={() => setOpenMenu(!openMenu)} className="DropProfile">
+      <Link to="/login">Log In</Link>
+      <Link to="/signup">Sign Up</Link>
+      <Link to="/faq"> FAQ</Link>
     </ul>
   </div>
   )

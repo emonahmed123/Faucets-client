@@ -1,0 +1,23 @@
+.Auth_container {align-items: center;
+    display: flex;
+    height: 80vh;
+    justify-content: center;}
+
+
+.SingupCard{
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 3px;
+    box-shadow: 0 2px 5px -4px grey;
+    margin: auto;
+    padding: 20px;
+    width:33%;
+  
+}
+ .Allfont{
+    font-family: Varela Round, sans-serif;
+    
+ }
+.custom-bgc {
+    background-color: #eef2fe;
+  }
