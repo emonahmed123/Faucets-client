@@ -20,3 +20,23 @@
     margin-right: 8px !important;
     width: 15px !important;
 }
+
+@media screen and (max-width: 768px) {
+  .SecondProfile {
+    position: absolute;
+    top: 5rem;
+    right: 6.5rem;
+    width: 197px;
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 3px;
+    box-shadow: 0 4px 9px -8px grey;
+    height: auto;
+    list-style: none
+
+}
+}
