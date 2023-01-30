@@ -1,0 +1,22 @@
+.SecondProfile {
+    position: absolute;
+    top: 5rem;
+    right: 21.5rem;
+    width: 221px;
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 3px;
+    box-shadow: 0 4px 9px -8px grey;
+    height: auto;
+    list-style: none;
+}
+  .networksImg {
+    height:15px !important;
+    margin-bottom: -2px !important;
+    margin-right: 8px !important;
+    width: 15px !important;
+}

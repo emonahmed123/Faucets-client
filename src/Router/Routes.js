@@ -5,6 +5,10 @@ import Main from "../Layout/Main"
 import Singpu from "../page/Singup/Singpu"
 import Ethtrasection from "../component/Ethtransection/Ethtrasection";
 import TestLinkHistory from "../component/TestLinkHistory/TestLinkHistory";
+import Login from "../page/Singup/Login";
+import DashBoard from "../Layout/DashBoard";
+import Alluser from "../page/Alluser/Alluser";
+import Profule from "../page/Profile/Profule";
 
 export const router = createBrowserRouter([
     {
@@ -20,10 +24,10 @@ export const router = createBrowserRouter([
          {path:'/test',element: <TestLinkHistory></TestLinkHistory>},
        ]
         },
-        // {
-        //   path: '/login',
-        //   element: <Login></Login>
-        // },
+        {
+          path: '/login',
+          element: <Login></Login>
+        },
         {
           path: '/signup',
           element: <Singpu></Singpu>
@@ -34,5 +38,21 @@ export const router = createBrowserRouter([
         },
   
       ]
-    }
+    },
+    {
+      path: "/dashboard",
+      element: <DashBoard />,
+      children: [
+         {
+           path: "/dashboard",
+           element: <Profule />,
+         },
+        {
+          path:"All",
+          element: <Alluser/>,
+        },
+      ],
+    },
+
+
   ])

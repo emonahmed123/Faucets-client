@@ -6,18 +6,58 @@
 
 .SingupCard{
     background: #fff;
-    border: 1px solid #eee;
+    border: none;
     border-radius: 3px;
-    box-shadow: 0 2px 5px -4px grey;
+    box-shadow: 0 2px 5px -4px grey !important;
     margin: auto;
     padding: 20px;
-    width:33%;
+    width:35%;
   
 }
+
  .Allfont{
     font-family: Varela Round, sans-serif;
+    font-size:13px; ;
     
  }
 .custom-bgc {
     background-color: #eef2fe;
+  }
+
+
+.submit-btn {
+    background-color:#9b1fe9 !important;
+    border: none;
+    border-radius: 3px;
+    color: #fff!important;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 20px!important;
+    outline: none ;
+    padding: 10px 15px;
+    text-transform: capitalize;
+    width: 100%;
+}
+  
+
+.form{
+    height: 80vh;
+    background-color: #eef2fe;
+  }
+  
+  .form-card{
+    width: 450px;
+    border:none !important;
+    padding: 8px;
+  }
+  
+  .form-control:focus{
+    border-color: #6265e4 !important;
+    box-shadow: 0 0 0px #9b1fe9 !important;
+  }
+  
+  .submit-btn{
+    background-color: #9b1fe9 !important;
+    width: 100%;
   }

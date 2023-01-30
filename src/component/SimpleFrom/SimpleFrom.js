@@ -1,8 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Button, Form } from "react-bootstrap";
+import ReCAPTCHA from 'react-google-recaptcha';
 import './SimpleFrom.css'
 function SimpleFrom() {
-  
+  const [verified, setVerified] = useState(false);
+  const handleRecaptcha = (value) => {
+    console.log("Captcha value:", value);
+    setVerified(true);
+  };
 
   
     return (
@@ -41,13 +46,15 @@ function SimpleFrom() {
           />
         </div>
       </Form.Group>
-
-      {/* <ReCAPTCHA
-        className="mb-3"
-        sitekey={process.env.REACT_APP_site_key}
+     
+          
+       <ReCAPTCHA 
+        className=""
+        sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
         onChange={handleRecaptcha}
-        style={{"transform":"scale(0.77)", "WebkitTransform":"scale(0.77)" , "transformOrigin":"0 0" ,"WebkitTransformOrigin":"0 0"}}
-      /> */}
+        style={{"transform":"scale(0.77)", "WebkitTransform":"scale(0.77)" , "transformOrigin":"0 0" ,"WebkitTransformOrigin":"0 0",}}
+      /> 
+     
 
       <Button
         type="submit"

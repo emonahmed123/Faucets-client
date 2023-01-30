@@ -70,7 +70,6 @@
     padding: 5px;
     width: 44px;
     cursor: pointer;
-    
     height: 43px; 
 }
 
@@ -123,12 +122,12 @@
 
 
     .Biche {
-    position: absolute;
-    right: 101px;
-    top: 27px;
+    position: absolute; 
+    right: 130px; 
+     top: 27px; 
 
 
-    }
+     } 
 
     .connectButton {
         display: flex;

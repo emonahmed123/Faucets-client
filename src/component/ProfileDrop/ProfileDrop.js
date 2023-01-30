@@ -11,6 +11,7 @@ const ProfileDrop = (props) => {
       <Link to="/login">Log In</Link>
       <Link to="/signup">Sign Up</Link>
       <Link to="/faq"> FAQ</Link>
+      <Link to ="/dashboard"> DashBoard</Link>
     </ul>
   </div>
   )
