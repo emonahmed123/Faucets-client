@@ -1,25 +1,20 @@
-import React from 'react'
-import { GoogleLogin } from  '@react-oauth/google';
-import { GoogleOAuthProvider } from '@react-oauth/google';
+ import React from 'react'
+ import { GoogleLogin } from 'react-google-login';
 
 const Google = () => {
-  
- 
+//    const id="443799169113-qid232jtr8o1grta1guja2rjec856mdt.apps.googleusercontent.com"
+   const responseGoogle = (response) => {
+    console.log(response);
+  }
     return (
     <div>
   
-
-<GoogleOAuthProvider clientId="462131792208-bim4rc1siogjfe2of4qkp3or3tc154jd.apps.googleusercontent.com">
-
 <GoogleLogin
-  onSuccess={credentialResponse => {
-     console.log(credentialResponse);
-  }}
-  onError={() => {
-     console.log('Login Failed');
-  }}
-/>
-</GoogleOAuthProvider>
+    clientId="443799169113-qid232jtr8o1grta1guja2rjec856mdt.apps.googleusercontent.com"
+    buttonText="Login"
+    onSuccess={responseGoogle}
+    onFailure={responseGoogle}
+    cookiePolicy={'single_host_origin'}/>
 
     </div>
   )
