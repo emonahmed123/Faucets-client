@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import './Singpu.css'
 import { AiOutlineGoogle, AiOutlineInstagram } from 'react-icons/ai';
 import {FaFacebook}from 'react-icons/fa'
+import Google from './Google';
 const Singpu = () => {
   const [error,setError]=useState([]);
   const handleSignUp = e =>{
@@ -75,9 +76,8 @@ const Singpu = () => {
             </p>
             <h5 className="text-center">Or</h5>
             <div className="d-flex justify-content-center  my-4">
-              <AiOutlineGoogle style={{"margin-right":"20px"}} size={22}/>
-              <FaFacebook style={{"margin-right":"20px"}}  size={20}/>
-              <AiOutlineInstagram size={20}/>
+               <Google></Google>
+             
             </div>
           </Form>
         

@@ -8,13 +8,16 @@ const Alluser = () => {
    fetch(`https://fulance-sever.onrender.com/api/v1/user/allm`,{
      method:'GET',
      headers:{
-       
-  },
+      authorization: `Bearer ${localStorage.getItem('accessToken')}`
+    },
    }).then(res=>res.json())
-   .then(data=>setUser(data.data))    
+   .then(data=>setUser(data?.data))    
 
  },[])
-  
+  if(!users){
+    
+     return <p className='mt-5' >admin only show all user</p>
+  }
  
  
   return (

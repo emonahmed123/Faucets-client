@@ -3,6 +3,7 @@ import { Button, Card, Form } from 'react-bootstrap'
 import { Link } from 'react-router-dom';
 import { AiOutlineGoogle, AiOutlineInstagram } from 'react-icons/ai';
 import {FaFacebook}from 'react-icons/fa'
+import Google from './Google';
 const Login = () => {
    const[token,setToken]=useState([])  
   const handleLogin = (e) => {
@@ -82,9 +83,7 @@ const Login = () => {
           </p>
           <h5 className="text-center">Or</h5>
           <div className="d-flex justify-content-center  my-4">
-              <AiOutlineGoogle style={{"margin-right":"20px"}} size={22}/>
-              <FaFacebook style={{"margin-right":"20px"}}  size={20}/>
-              <AiOutlineInstagram size={20}/>
+             <Google></Google>
             </div>
         </Form>
         
